@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPM WEST | Все товары</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-2">
+        <img src="logo-placeholder.png" alt="RPM Logo" class="h-8">
+        <span class="font-bold text-lg">RPM WEST</span>
+      </div>
+      <nav class="space-x-6">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Главная</a>
+        <a href="#" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Все товары</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Временные наборы</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Соглашение</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="p-2 bg-gray-100 rounded-full">🎮</button>
+        <button class="p-2 bg-gray-100 rounded-full">💬</button>
+        <button class="p-2 bg-gray-100 rounded-full">🛒 0.00 ₽</button>
+      </div>
+    </div>
+  </header>
+
+<!-- Banner -->
+<section class="relative text-white py-12 text-center overflow-hidden">
+  <!-- Размытый фон -->
+  <div class="absolute inset-0">
+    <img src="download.jpg" alt="Фон баннера" class="w-full h-full object-cover blur-md brightness-50">
+  </div>
+
+  <div class="relative container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-6">
+      
+      <!-- Фото баннера -->
+      <div class="w-64 h-64 rounded-xl flex items-center justify-center mb-6 md:mb-0 bg-gray-700/30 p-2">
+        <img src="6457a5ebdb8a7_rpm-plus.png" alt="Подписка RPM+" class="w-full h-full object-contain drop-shadow-lg">
+      </div>
+
+      <!-- Текст баннера -->
+      <div class="text-left max-w-md">
+        <h2 class="text-2xl font-bold mb-2">Подписка RPM+</h2>
+        <p class="text-sm mb-4">10+ уникальных возможностей, значительно дополняющих игровой процесс</p>
+        <button class="w-full bg-white text-blue-900 py-2 rounded-lg font-semibold mb-3">Полное описание преимуществ</button>
+        <div class="flex space-x-4">
+          <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg">1 месяц<br>399 ₽</button>
+          <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg">1 год<br>3499 ₽</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Products Section -->
+  <section class="py-12 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-2">ВСЕ ТОВАРЫ</h2>
+    <p class="text-center text-gray-500 mb-8">расширяй возможности: аксессуары и привилегии для тебя!</p>
+<div class="grid md:grid-cols-2 gap-6 mb-10">
+
+  <!-- RPMPass -->
+  <div class="relative rounded-2xl overflow-hidden text-white p-6 flex flex-col justify-between">
+    <!-- Размытый фон -->
+    <div class="absolute inset-0">
+      <img src="выа.jpg" alt="Фон RPMPass" class="w-full h-full object-cover blur-sm brightness-50">
+    </div>
+
+    <div class="relative z-10">
+      <div class="flex items-center space-x-4 mb-4">
+        <img src="668ab7533d2ab_rpm_bp (3).png" alt="RPMPass" class="w-20 h-20 object-contain drop-shadow-lg">
+        <h3 class="text-2xl font-bold">RPMPass</h3>
+      </div>
+      <p class="text-sm mb-2">Получите награды за игру на сервере. Огромное количество уникальных предметов.</p>
+      <p class="text-sm mb-4">Истинному коллекционеру мимо не пройти!</p>
+      <select class="p-2 w-full rounded text-black mb-4 bg-white/80">
+        <option>RPMPass / Часы</option>
+      </select>
+      <button class="bg-indigo-600 hover:bg-indigo-700 py-2 rounded-lg w-full font-semibold flex items-center justify-center space-x-2">
+        <span>🛒</span> <span>Купить за 10 ₽</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Игровая валюта -->
+  <div class="relative rounded-2xl overflow-hidden text-white p-6 flex flex-col justify-between">
+    <!-- Размытый фон -->
+    <div class="absolute inset-0">
+      <img src="вапав.jpg" alt="Фон валюты" class="w-full h-full object-cover blur-sm brightness-50">
+    </div>
+
+    <div class="relative z-10">
+      <div class="flex items-center space-x-4 mb-4">
+        <img src="668ab73ee0c95_rpm_money (3).png" alt="Игровая валюта" class="w-20 h-20 object-contain drop-shadow-lg">
+        <h3 class="text-2xl font-bold">Игровая валюта</h3>
+      </div>
+      <p class="text-sm mb-4">Игровая валюта проекта. Работать больше не надо ;)</p>
+
+      <!-- Ползунок -->
+      <input type="range" min="800" max="9600" value="4800" class="w-full accent-indigo-500 mb-3" id="moneyRange">
+      
+      <div class="flex items-center justify-between text-sm bg-white/20 p-2 rounded mb-4">
+        <div class="flex items-center space-x-1">
+          <input id="moneyInput" type="number" value="4800" class="w-20 text-center rounded bg-white/80 text-black"> 
+          <span>$</span>
+        </div>
+        <p>1 ₽ = 800 $</p>
+        <div class="flex items-center space-x-1">
+          <input id="priceInput" type="number" value="6" class="w-12 text-center rounded bg-white/80 text-black">
+          <span>₽</span>
+        </div>
+      </div>
+
+      <button class="bg-indigo-600 hover:bg-indigo-700 py-2 rounded-lg w-full font-semibold flex items-center justify-center space-x-2">
+        <span>🛒</span> <span>Купить 4800 $ за 6 ₽</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Небольшой JS для синхронизации ползунка и значений
+  const range = document.getElementById('moneyRange');
+  const moneyInput = document.getElementById('moneyInput');
+  const priceInput = document.getElementById('priceInput');
+
+  range.addEventListener('input', () => {
+    moneyInput.value = range.value;
+    priceInput.value = Math.round(range.value / 800);
+  });
+
+  moneyInput.addEventListener('input', () => {
+    range.value = moneyInput.value;
+    priceInput.value = Math.round(moneyInput.value / 800);
+  });
+</script>
+    <!-- Product categories -->
+    <div class="flex flex-wrap gap-3 mb-8 justify-center">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Все товары</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Привилегии</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Снять нарушения</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Оружие</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Транспорт</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Документы</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Наборы</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Фермерство</button>
+    </div>
+
+<!-- Product grid -->
+<div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+  <!-- Товар 1 -->
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="главадмин.png" alt="глав админ" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">девственность главного админа</h4>
+    <p class="mb-2">10 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <!-- Товар 2 -->
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="vip.png" alt="VIP" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">девственность случайного админа</h4>
+    <p class="mb-2">5 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <!-- Товар 3 -->
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="premium.png" alt="Premium" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">Иммунитет от глистов</h4>
+    <p class="mb-2">1500 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <!-- Товар 4 -->
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="donate.png" alt="Рецепт борща от разработчика" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">Рецепт борща от разработчика</h4>
+    <p class="mb-2">1000 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="donate.png" alt="Рецепт борща от разработчика" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">VIP на 3 секунды</h4>
+    <p class="mb-2">99999999 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="donate.png" alt="Рецепт борща от разработчика" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">Фото админа</h4>
+    <p class="mb-2">50000 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="donate.png" alt="Рецепт борща от разработчика" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">Абонемент на срач в чате</h4>
+    <p class="mb-2">300 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+    <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+      <img src="donate.png" alt="Рецепт борща от разработчика" class="h-full object-contain">
+    </div>
+    <h4 class="font-semibold mb-2">Сертификат на грамотность</h4>
+    <p class="mb-2">500 ₽</p>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+  </div>
+
+  <div class="bg-white shadow rounded-lg p-4 text-center">
+  <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">(Фото)</div>
+  <h4 class="font-semibold mb-2">Молоко лично от WhiteGotika</h4>
+  <p class="mb-2">11 ₽</p>
+  <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+</div>
+
+<div class="bg-white shadow rounded-lg p-4 text-center">
+  <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">(Фото)</div>
+  <h4 class="font-semibold mb-2">Курс молодого читера</h4>
+  <p class="mb-2">600 ₽</p>
+  <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+</div>
+
+<div class="bg-white shadow rounded-lg p-4 text-center">
+  <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">(Фото)</div>
+  <h4 class="font-semibold mb-2">одна жалоба в поддержку</h4>
+  <p class="mb-2">7000 ₽</p>
+  <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+</div>
+
+<div class="bg-white shadow rounded-lg p-4 text-center">
+  <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+    <img src="ban_any_player.png" alt="Забанить любого игрока" class="h-full object-contain">
+  </div>
+  <h4 class="font-semibold mb-2">Забанить любого игрока</h4>
+  <p class="mb-2">49 ₽</p>
+  <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+</div>
+
+<div class="bg-white shadow rounded-lg p-4 text-center">
+  <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
+    <img src="buy_rpm_server.png" alt="Купить сервер RPM" class="h-full object-contain">
+  </div>
+  <h4 class="font-semibold mb-2">Купить сервер RPM</h4>
+  <p class="mb-2">3 ₽</p>
+  <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">Купить</button>
+</div>
+
+
+</div>
+
+  <!-- Last Purchases -->
+  <section class="py-12 bg-gray-100 text-center">
+    <h2 class="text-2xl font-bold mb-2">ПОСЛЕДНИЕ ПОКУПКИ</h2>
+    <p class="text-gray-500 mb-8">неоценимый вклад в развитие проекта</p>
+
+    <div class="grid md:grid-cols-5 gap-4 justify-center">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <div class="h-20 w-20 bg-gray-200 mx-auto rounded mb-3 flex items-center justify-center">(Фото)</div>
+        <h4 class="font-semibold">Игрок</h4>
+        <p class="text-sm text-gray-500">Снятие варнов</p>
+      </div>
+      <!-- Повторить блок для других игроков -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+    <p>© 2018-2025 RPM ROLEPLAY. Копирование материалов запрещено.</p>
+    <p class="mt-2">ИП ПЛЮЩИКОВ АЛЕКСЕЙ ЮРЬЕВИЧ | ОГРНИП 324774600809592</p>
+    <p class="mt-2">Для связи: <a href="mailto:admin@rpmserver.ru" class="text-blue-400">admin@rpmserver.ru</a></p>
+    <div class="flex justify-center items-center space-x-4 mt-4">
+      <img src="visa.png" alt="Visa" class="h-6">
+      <img src="mir.png" alt="Мир" class="h-6">
+      <img src="freekassa.png" alt="Freekassa" class="h-6">
+    </div>
+  </footer>
+
+</body>
+</html>
