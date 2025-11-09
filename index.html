@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RPM WEST | Все товары</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+
+<body class="bg-gray-50 text-gray-900 font-sans flex flex-col min-h-screen">
 
   <!-- Header -->
   <header class="bg-white shadow-sm">
@@ -29,35 +30,37 @@
     </div>
   </header>
 
-<!-- Banner -->
-<section class="relative text-white py-12 text-center overflow-hidden">
-  <!-- Размытый фон -->
-  <div class="absolute inset-0">
-    <img src="download.jpg" alt="Фон баннера" class="w-full h-full object-cover blur-md brightness-50">
-  </div>
-
-  <div class="relative container mx-auto px-4">
-    <div class="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-6">
-      
-      <!-- Фото баннера -->
-      <div class="w-64 h-64 rounded-xl flex items-center justify-center mb-6 md:mb-0 bg-gray-700/30 p-2">
-        <img src="6457a5ebdb8a7_rpm-plus.png" alt="Подписка RPM+" class="w-full h-full object-contain drop-shadow-lg">
+  <!-- MAIN (весь контент, чтобы футер можно было "вытолкнуть" вниз) -->
+  <main class="flex-1">
+    <!-- Banner -->
+    <section class="relative text-white py-12 text-center overflow-hidden">
+      <!-- Размытый фон -->
+      <div class="absolute inset-0">
+        <img src="download.jpg" alt="Фон баннера" class="w-full h-full object-cover blur-md brightness-50">
       </div>
 
-      <!-- Текст баннера -->
-      <div class="text-left max-w-md">
-        <h2 class="text-2xl font-bold mb-2">Подписка RPM+</h2>
-        <p class="text-sm mb-4">10+ уникальных возможностей, значительно дополняющих игровой процесс</p>
-        <button class="w-full bg-white text-blue-900 py-2 rounded-lg font-semibold mb-3">Полное описание преимуществ</button>
-        <div class="flex space-x-4">
-          <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg">1 месяц<br>399 ₽</button>
-          <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg">1 год<br>3499 ₽</button>
+      <div class="relative container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-6">
+          
+          <!-- Фото баннера -->
+          <div class="w-64 h-64 rounded-xl flex items-center justify-center mb-6 md:mb-0 bg-gray-700/30 p-2">
+            <img src="6457a5ebdb8a7_rpm-plus.png" alt="Подписка RPM+" class="w-full h-full object-contain drop-shadow-lg">
+          </div>
+
+          <!-- Текст баннера -->
+          <div class="text-left max-w-md">
+            <h2 class="text-2xl font-bold mb-2">Подписка RPM+</h2>
+            <p class="text-sm mb-4">10+ уникальных возможностей, значительно дополняющих игровой процесс</p>
+            <button class="w-full bg-white text-blue-900 py-2 rounded-lg font-semibold mb-3">Полное описание преимуществ</button>
+            <div class="flex space-x-4">
+              <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg">1 месяц<br>399 ₽</button>
+              <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg">1 год<br>3499 ₽</button>
+            </div>
+          </div>
+
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
   <!-- Products Section -->
@@ -142,7 +145,19 @@
   });
 </script>
     <!-- Product categories -->
-    <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="flex flex-wrap gap-3 mb-8 justify-center">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Все товары</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Привилегии</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Снять нарушения</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Оружие</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Транспорт</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Документы</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Наборы</button>
+      <button class="bg-gray-100 px-4 py-2 rounded">Фермерство</button>
+    </div>
+
+<!-- Product grid -->
+<div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
 
   <div class="bg-white shadow rounded-lg p-4 text-center">
     <div class="h-40 bg-gray-200 rounded mb-3 flex items-center justify-center">
@@ -262,6 +277,7 @@
   </div>
 
 </div>
+
 <!-- Last Purchases -->
 <section class="py-12 bg-gray-100 text-center">
   <h2 class="text-2xl font-bold mb-2">ПОСЛЕДНИЕ ПОКУПКИ</h2>
@@ -332,24 +348,25 @@
       <p class="text-sm text-gray-500">покупка</p>
       <p class="text-xs text-gray-400 mt-1">Сегодня в 13:15</p>
     </div>
-  </div>
-</section>
+ </div>
+    </section>
 
+  </main>
 
-  <!-- Footer -->
-  <footer class="w-full bg-gray-900 text-gray-300 text-center py-8 text-sm mt-16">
-    <div class="max-w-screen-xl mx-auto px-4">
+  <!-- Footer (НЕ fixed, будет внизу страницы и растягивается по ширине) -->
+  <footer class="w-full bg-gray-900 text-gray-300 text-center py-6 text-sm mt-auto border-t border-gray-800">
+    <div class="w-full max-w-screen-xl mx-auto px-4">
       <p class="mb-2">
         © 2018–2025 <span class="font-semibold text-white">RPM ROLEPLAY</span>. Копирование материалов запрещено.
       </p>
       <p class="mb-4">
         ИП ПЛУХНИКОВ АЛЕКСЕЙ ЮРЬЕВИЧ (ИНН 77279256684 ОГРНИП 324774600809992)
       </p>
-      <p class="mb-6">
+      <p class="mb-4">
         Для связи: <a href="mailto:admin@rpmserver.ru" class="text-blue-400 hover:underline">admin@rpmserver.ru</a>
       </p>
 
-      <div class="flex flex-wrap items-center justify-center gap-6 mb-4">
+      <div class="flex flex-wrap items-center justify-center gap-6 mb-2">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="h-6">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="h-6">
         <img src="mir.svg" alt="Мир" class="h-6">
@@ -363,11 +380,5 @@
     </div>
   </footer>
 
-
 </body>
 </html>
-
-
-
-
-
